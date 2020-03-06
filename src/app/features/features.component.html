@@ -1,0 +1,16 @@
+<section class="features pt-5 mb-sm-4 text-center">
+    <div class="container shadow p4">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 my-5 pl-5" *ngFor="let fe of features">
+                <div class="d-inline-block float-left icon">
+                    <i class="{{fe.icon}}"></i>
+                </div>
+                <div class="d-inline-block float-right">
+                    <h5 class="font-weight-normal"> {{fe.header}}</h5>
+                    <p class="lead pl-3"> {{fe.content}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

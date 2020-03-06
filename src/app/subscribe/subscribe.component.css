@@ -1,0 +1,32 @@
+.subscribe{
+    height: 450px;
+    background: url("../../assets/images/classic-clothes-commerce-fashion-298863.jpg")no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.subscribe .overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+.subscribe .subscribe-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.subscribe-body .form-control{
+    width: 70%;
+    transition: width 0.5s ease-in-out;
+
+}
+.subscribe-body .form-control:focus{
+    width: 100%;
+}

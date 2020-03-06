@@ -1,0 +1,10 @@
+<section class="best-seller py-4 my-4">
+    <div class="container">
+        <h3 class="text-uppercase d-inline-block"> Best Seller</h3>
+        <div class="row text-center mt-4">
+            <div class="col-6 col-sm-4 col-md-3 my-1" *ngFor="let product of bestSellerProducts">
+                <app-best-seller-product [currentProduct]="product"></app-best-seller-product>
+            </div>
+        </div>
+    </div>
+</section>

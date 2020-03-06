@@ -1,0 +1,46 @@
+<div class="card text-center" style="width: 18rem;">
+    <img src="{{currentNews.img}}" class="card-img-top" alt="..." style="height: 270px">
+    <div class="rates p-3">
+        <span>
+            <i class="fa fa-comment fa-lg"></i>
+                        {{currentNews.comment}}
+
+        </span>
+        <span>
+            <i class="fa fa-eye fa-lg"></i>
+            {{currentNews.view}}
+        </span>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{currentNews.header}}</h5>
+        <p class="card-text">{{currentNews.shortDes}}</p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark read-more" (click)="onClickViewer(currentNews.id)" data-toggle="modal" data-target="#exampleModal">
+            Read More...
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngIf="data !=null">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{{data.header}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        {{data.longDes}}
+                    </div>
+                    <div class="modal-footer">
+                        <input class="form-control" type="text" style="width: 50%">
+                        <button type="button" class="btn btn-primary">Add Comment</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

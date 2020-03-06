@@ -1,0 +1,49 @@
+.best-seller .card:hover{
+    box-shadow: rgba(0,0,0,0.7) 0px 0.5rem 1rem;
+}
+.card .card-image img{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.card-image img:hover{
+    transform: scale(1.2);
+}
+.card .card-image:hover .add-btn{
+    bottom: 0;
+}
+.card .card-image{
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+}
+.card .add-btn{
+    position: absolute;
+    left: 0;
+    bottom: -3rem;
+    width: 100%;
+    color: #f84258;
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.seperator-bg{
+    height: 0.5rem;
+    background-color:#eeeeee;
+
+}
+.card-body{
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .card-body{
+    background-color: #eeeeee;
+}
+.seperator-line{
+    height: 3px;
+    background-color: #eeeeee;
+    width: 70%;
+}
+.card-body .prices{
+    color: #f84258;
+    font-size: 20px;
+    transform: rotate(-10deg);
+}

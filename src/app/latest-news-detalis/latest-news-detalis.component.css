@@ -1,0 +1,23 @@
+.card .rates{
+    background-color: #eeeeee;
+}
+.modal{
+    top:100px !important;
+}
+.modal .modal-body{
+    line-height: 2.5rem;
+}
+.card:hover{
+    box-shadow: rgba(0,0,0,.15) 0px 0.5rem 1rem;
+}
+.rates span{
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .rates span{
+    color: #f84258;
+}
+.card:hover .card-body .read-more{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}

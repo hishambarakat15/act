@@ -1,0 +1,10 @@
+<div class="card " style="width: 18rem;" *ngIf="currentProduct!= null">
+    <h4 class="card-header bg-dark text-danger">
+        {{currentProduct.price |currency}}
+    </h4>
+    <img src="{{currentProduct.image}}" class="card-img-top" alt="..." height="250px">
+    <div class="card-body text-center">
+        <h5 class="card-title">{{currentProduct.name}}</h5>
+        <a class="btn btn-dark mr-2 d-inline-block" (click)="onAddToCartClick()">Add To Cart </a>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<section class="trending py-4">
+    <div class="container ">
+        <h3 class="d-inline-block text-uppercase"> Trendin Now</h3>
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6" *ngFor="let product of treadingProducts">
+                <app-trending-product [currentProduct]="product"></app-trending-product>
+            </div>
+        </div>
+
+
+    </div>
+</section>

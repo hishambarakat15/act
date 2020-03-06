@@ -1,0 +1,12 @@
+<section class="latest-news my-4 py-4">
+    <div class="container">
+        <h3 class="d-inline-block text-uppercase">Latest News </h3>
+        <div class="row mt-5">
+            <div class="col col-md-4" *ngFor="let news of latestNews">
+                <app-latest-news-detalis [currentNews]="news"></app-latest-news-detalis>
+            </div>
+
+        </div>
+    </div>
+
+</section>

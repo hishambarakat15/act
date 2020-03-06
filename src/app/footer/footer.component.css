@@ -1,0 +1,18 @@
+footer h5{
+    color: #7e7e7e;
+    position: relative;
+}
+footer h5:after{
+    content: " ";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: #f84258;
+
+}
+.footer{
+    color: #FFFFFF;
+}

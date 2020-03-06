@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-image">
+        <img src="{{currentProduct.image}}">
+        <button class="btn btn-dark add-btn " (click)="addToCartClick()">
+            <i class="fa fa-cart-arrow-down fa-lg"></i>
+            Add To Cart
+        </button>
+    </div>
+    <div class="seperator-bg"></div>
+    <div class="card-body">
+        <h4 class="card-title m-auto pb-3"> {{currentProduct.name}}</h4>
+        <div class="seperator-line m-auto"></div>
+        <span class="prices d-inline-block font-weight-bold pt-2"> {{currentProduct.price|currency}}</span>
+    </div>
+</div>

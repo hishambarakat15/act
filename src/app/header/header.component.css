@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url(../../assets/fonts/ARLRDBD.TTF) format("truetype");
+}
+.navbar{
+    position: fixed !important;
+    z-index: 99999;
+    width: 90%;
+    left: 5%;
+    font-family:'My Custom Font',sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+ .navbar-brand{
+    font-size: 28px;
+    color: #f84258;
+}
+
+ .tool-menu{
+    position: absolute;
+    right: 20px;
+
+}
+nav .tool-menu i{
+    color:#363636;
+    font-weight: 900px;
+}
+
+nav .tool-menu i:hover{
+    color: #f84258;
+}
+@media (min-width: 992px) {
+    .search-box {
+        top: 55px;
+    }
+}
+.search-box{
+    position: relative;
+    transition:  .15s ease-in-out;
+    display: none;
+
+}
+

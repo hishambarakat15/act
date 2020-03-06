@@ -1,0 +1,14 @@
+<section class="new-stuff py-4">
+    <div class="container">
+        <h3 class="m-auto d-inline-block text-uppercase">New Stuff </h3>
+        <div class="row">
+            <div class="col-12 pt-5">
+                <div class="owl-carousel owl-theme" >
+                    <div *ngFor="let product of newProduct">
+                        <app-new-product [currentProduct]="product"></app-new-product>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

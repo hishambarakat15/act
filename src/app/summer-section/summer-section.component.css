@@ -1,0 +1,36 @@
+.summer-shopping .summer-section {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.summer-section:hover .overly-des{
+    left: 0;
+}
+.summer-one{
+    background: url("../../assets/images/nike.jpg") no-repeat center;
+    background-size: cover;
+
+}
+.summer-two{
+    background: url("../../assets/images/close.jpg") no-repeat center;
+    background-size: cover;
+}
+.overly-des{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top:0;
+    left:-100%;
+    background-color: rgba(0,0,0,0.7);
+    transition: left 0.5s ease-in-out;
+}
+.overly-des .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content a i {position: relative;}
+
+.content a:hover i {right: -5px;};
